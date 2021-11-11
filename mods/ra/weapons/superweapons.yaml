@@ -55,7 +55,7 @@ Atomic:
 		ValidTargets: Ground, Water, Air
 	Warhead@5Dam_areanuke1: SpreadDamage
 		Spread: 2c0
-		Damage: 6000
+		Damage: 15000
 		Falloff: 1000, 368, 135, 50, 18, 7, 0
 		Delay: 5
 		ValidTargets: GroundActor, WaterActor, Underwater, AirborneActor, Trees
@@ -77,7 +77,7 @@ Atomic:
 		ImpactActors: false
 	Warhead@9Dam_areanuke2: SpreadDamage
 		Spread: 3c0
-		Damage: 6000
+		Damage: 15000
 		Falloff: 1000, 368, 135, 50, 18, 7, 0
 		Delay: 10
 		ValidTargets: GroundActor, Trees, WaterActor, Underwater, AirborneActor
@@ -96,7 +96,7 @@ Atomic:
 		Delay: 10
 	Warhead@13Dam_areanuke3: SpreadDamage
 		Spread: 4c0
-		Damage: 6000
+		Damage: 15000
 		Falloff: 1000, 368, 135, 50, 18, 7, 0
 		Delay: 15
 		ValidTargets: GroundActor, Trees, WaterActor, Underwater, AirborneActor
@@ -114,7 +114,7 @@ Atomic:
 		Delay: 15
 	Warhead@17Dam_areanuke4: SpreadDamage
 		Spread: 5c0
-		Damage: 6000
+		Damage: 15000
 		Falloff: 1000, 368, 135, 50, 18, 7, 0
 		Delay: 20
 		ValidTargets: GroundActor, Trees, WaterActor, Underwater, AirborneActor

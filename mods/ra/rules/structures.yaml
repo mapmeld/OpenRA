@@ -1,24 +1,22 @@
 MSLO:
 	Inherits: ^ScienceBuilding
-	Inherits@IDISABLE: ^DisableOnLowPowerOrPowerDown
 	Inherits@shape: ^2x1Shape
 	Selectable:
 		Bounds: 2048, 1024
 	Valued:
-		Cost: 2500
+		Cost: 200
 	Tooltip:
 		Name: Missile Silo
 	Buildable:
 		Queue: Defense
 		BuildPaletteOrder: 140
-		Prerequisites: techcenter, ~techlevel.unrestricted
 		BuildLimit: 1
 		Description: Provides an atomic bomb.\nRequires power to operate.\nMaximum 1 can be built.\n  Special Ability: Atom Bomb
 	Building:
 		Footprint: xx
 		Dimensions: 2,1
 	Health:
-		HP: 100000
+		HP: 1000000
 	Armor:
 		Type: Wood
 	RevealsShroud:
@@ -36,7 +34,7 @@ MSLO:
 		PauseOnCondition: disabled
 		Cursor: nuke
 		Icon: abomb
-		ChargeInterval: 13500
+		ChargeInterval: 100
 		Description: Atom Bomb
 		LongDesc: Launches a devastating atomic bomb\nat a target location.
 		BeginChargeSpeechNotification: AbombPrepping
@@ -62,7 +60,7 @@ MSLO:
 	Targetable:
 		TargetTypes: GroundActor, C4, DetonateAttack, Structure, SpyInfiltrate
 	Power:
-		Amount: -150
+		Amount: -10
 	MustBeDestroyed:
 		RequiredForShortGame: false
 	WithSupportPowerActivationAnimation:
