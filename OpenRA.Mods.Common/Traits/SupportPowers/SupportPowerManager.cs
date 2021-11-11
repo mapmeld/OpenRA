@@ -276,10 +276,10 @@ namespace OpenRA.Mods.Common.Traits
 
 	public class SelectGenericPowerTarget : OrderGenerator
 	{
-		readonly SupportPowerManager manager;
-		readonly string order;
-		readonly string cursor;
-		readonly MouseButton expectedButton;
+		protected readonly SupportPowerManager manager;
+		protected readonly string order;
+		protected readonly string cursor;
+		protected readonly MouseButton expectedButton;
 
 		public string OrderKey => order;
 

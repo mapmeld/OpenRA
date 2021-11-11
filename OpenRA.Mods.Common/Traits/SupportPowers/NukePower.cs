@@ -225,6 +225,18 @@ namespace OpenRA.Mods.Common.Traits
 			this.info = info;
 		}
 
+		protected override IEnumerable<Order> OrderInner(World world, CPos cell, int2 worldPixel, MouseInput mi)
+		{
+			world.CancelInputMode();
+			if (mi.Button == expectedButton && world.Map.Contains(cell) && !world.ShroudObscures(cell))
+				yield return new Order(order, manager.Self, Target.FromCell(world, cell), false) { SuppressVisualFeedback = true };
+		}
+
+		protected override string GetCursor(World world, CPos cell, int2 worldPixel, MouseInput mi)
+		{
+			return world.Map.Contains(cell) && !world.ShroudObscures(cell) ? cursor : "generic-blocked";
+		}
+
 		protected override IEnumerable<IRenderable> RenderAnnotations(WorldRenderer wr, World world)
 		{
 			if (info.CircleRanges == null)
